@@ -37,6 +37,7 @@ const MainContent = () => {
             <div className="ai-name">SARATHI AI</div>
                 <div className='sender-text' style={{lineHeight:'25px'}}> Hi, I am SarathiAi - Pramerica Life Insurance Chatbot. I'm here to help you with any question you have today?  Click on the menu button below to get started with your Insurance needs.
                 </div>
+                <div className="sender-timing"></div>
                 </div>
             </div>
         
