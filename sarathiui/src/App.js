@@ -1,5 +1,6 @@
 import Header from './components/Header.tsx';
 import MainContent from './components/MainContent.tsx';
+import Footer from './components/Footer.tsx'
 import './App.css';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Header />
       <MainContent />
+      <Footer/>
     </div>
   );
 }
