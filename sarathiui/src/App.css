@@ -96,9 +96,9 @@
 }
 
 .mainContent-container{
-  height: 80vh;
+  height: 77vh;
   overflow: auto;
-  padding: 15px;
+  padding: 10px 7px;
   background-color: #f0f4f8;
 }
 
@@ -115,6 +115,7 @@
  align-items: center;
  justify-content: center;
  width: 100%;
+ margin-bottom: -16px;
 }
 
 .time-live{
@@ -131,16 +132,18 @@
   margin-top: 10px;
   display: flex;
   align-items: flex-start;
-  gap: 10px;
+  gap: 5px;
 }
 
 .sender-logo{
   height: 35px;
+  position: relative;
   width: 35px;
   border-radius: 50%;
   background-color:  #002247;
   border: 2px solid #fff;
   color: #fff;
+  margin-top: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -149,21 +152,21 @@
 }
 
 .sender-message{
-  position: relative;
   border-radius: 10px;
   max-width: 78%;
   padding: 10px;
   background-color: #fff;
   font-family: sans-serif;
   color: black;
+  position: relative;
   margin-top: 20px;
   border-top-left-radius: 0;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: #0000003d 0px 3px 8px;
 }
 
 .ai-name{
   position: absolute;
-  top: -16px;
+  top: -15px;
   left: 0;
   color: #2d5986;
   font-size: 12px;
@@ -178,15 +181,15 @@
   flex-direction: column;
   /* gap: 8px; */
   height: 215px;
-  margin-left: 20px;
-  max-width: 75%;
+  margin-left: 40px;
+  max-width: 78%;
   padding: 10px;
   font-family: sans-serif;
   /* background-color: #dadada */
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
   /* border: 1px solid #dbdbdb; */
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: #0000003d 0px 3px 8px;
   font-family: sans-serif;
 }
 
