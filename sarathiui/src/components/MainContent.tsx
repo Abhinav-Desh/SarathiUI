@@ -30,10 +30,37 @@ const MainContent = () => {
             {initialTime}
           </div>
         </div>
-        <div className="sender-content"></div>
-        <div className="suggestions"></div>
+        <div className="sender-content">
+            <div className="sender-logo">SA</div>
+            <div className='sender-message'><div className='ai-name'>SARATHI AI</div>Hi, I am SarathiAi - Pramerica Life Insurance Chatbot. I'm here to help you with any question you have today?  Click on the menu button below to get started with your Insurance needs.</div>
+            </div>
+        
+        <div className="suggestions">
+            <div className="suggestions-heading">Here are the suggestions..</div>
+            <div className="suggestion-content">
+        <div className="suggestion-content-1">
+            <div className='mobile-view'></div>
+            <div className="mobile-content">Update Mobile Number</div>
+        </div>
+        <div className="suggestion-content-2">
+            <div className="email-view"></div>
+            <div className="email-content">Update Email</div>
+        </div>
+        <div className="suggestion-content-3">
+            <div className="bank-view"></div>
+            <div className="bank-content">Update Bank Details</div>
+        </div>
+        <div className="suggestion-content-4">
+            <div className="menu-view"></div>
+            <div className="menu-content">Back to Menu</div>
+        </div>
+        </div>
+        </div>
+
+        {/* user-content */}
+        <div className="user-container"></div>
+        </div>
       </div>
-    </div>
   );
 };
 

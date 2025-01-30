@@ -12,12 +12,12 @@ const Header = () => {
             <div className="header-content-2">
                 Sarathi Ai
             </div>
-            <div className="header-content-3">
+            {/* <div className="header-content-3">
                 <div className="two-profile">
                     <div className="profile-1"> SA</div>
                     <div className="profile-2">Y</div>
                 </div>
-            </div>
+            </div> */}
         </div>
     </div>
   )

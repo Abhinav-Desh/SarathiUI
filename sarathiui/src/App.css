@@ -17,11 +17,11 @@
 
 .header-content{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   height: 100%;
   width: 100%;
-  gap: 10px;
+  gap: 30px;
   padding: 10px;
 }
 
@@ -69,7 +69,7 @@
   height: 35px;
   width: 35px;
   border-radius: 50%;
-  background-color: rgb(170 201 194);
+  background-color: #cccccc;
   border: 2px solid #fff;
   /* font-size: 12px; */
   color: #fff;
@@ -105,6 +105,9 @@
 .mainContent-content{
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .opening-time{
@@ -116,9 +119,104 @@
 
 .time-live{
   width: 20%;
-  background-color: #e2e2e2;;
+  background-color: #ffffff;;
   text-align: center;
   font-size: 12px;
   border-radius: 5px;
   font-weight: 500;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+
+.sender-content{
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.sender-logo{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color:  #002247;
+  border: 2px solid #fff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  /* margin-top: 10px; */
+}
+
+.sender-message{
+  position: relative;
+  border-radius: 10px;
+  max-width: 78%;
+  padding: 10px;
+  background-color: #fff;
+  font-family: sans-serif;
+  color: black;
+  margin-top: 20px;
+  border-top-left-radius: 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.ai-name{
+  position: absolute;
+  top: -16px;
+  left: 0;
+  color: #2d5986;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: sans-serif;
+  letter-spacing: 0.03em;
+}
+
+
+.suggestions{
+  display: flex;
+  flex-direction: column;
+  /* gap: 8px; */
+  height: 215px;
+  margin-left: 20px;
+  max-width: 75%;
+  padding: 10px;
+  font-family: sans-serif;
+  /* background-color: #dadada */
+  background-color: #fff;
+  border-radius: 5px;
+  /* border: 1px solid #dbdbdb; */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  font-family: sans-serif;
+}
+
+.suggestions-heading{
+  /* border-bottom: 1px solid rgb(218, 218, 218); */
+  height: 30px;
+}
+
+.suggestion-content{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f4f8;
+  border-radius: 5px;
+  padding: 5px;
+  height: 100%;
+}
+
+.suggestion-content-1,.suggestion-content-2,.suggestion-content-3,.suggestion-content-4{
+  height: 25px;
+  font-size: 16px;
+  width: 98%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  height: 30px;
+  color: #2c2c2c;
+}
+
