@@ -71,7 +71,7 @@ const MainContent = () => {
               <div className='user-text' style={{lineHeight:'25px'}}>Update my mobile number
               </div>
               </div>
-              <div className="user-logo">Y</div>
+              {/* <div className="user-logo">Y</div> */}
         </div>
         </div>
       </div>
