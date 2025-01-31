@@ -98,11 +98,12 @@
   height: 77vh;
   overflow: auto;
   padding: 10px 7px;
-  background-color: #f0f4f8;
+  /* background-color: #dadada; */
+  background-color: #98c3de;
 }
 
 .mainContent-content{
-  height: 100%;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -119,11 +120,12 @@
 
 .time-live{
   width: 20%;
-  /* background-color: #ffffff;; */
   font-family: Helvetica;
   text-align: center;
   font-size: 12px;
-  border-radius: 5px;
+  padding: 2px;
+  border-radius: 20px;
+  background-color: #fff;
   font-weight: 500;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -137,9 +139,9 @@
 }
 
 .sender-logo{
-  height: 35px;
+  height: 30px;
   position: relative;
-  width: 35px;
+  width: 30px;
   border-radius: 50%;
   background-color:  #002247;
   border: 2px solid #fff;
@@ -148,21 +150,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 14px;
   /* margin-top: 10px; */
 }
 
 .sender-message {
-  border-radius: 5px;
+  border-radius: 30px;
   max-width: 78%;
   padding: 10px;
   background-color: #fff;
-  font-family: Helvetica;
+  font-family: tahoma;
   color: black;
   position: relative;
   margin-top: 20px;
+  font-size: 14px;
   border-top-left-radius: 0;
-  box-shadow: #0000003d 0px 3px 8px;
+  /* box-shadow: #0000003d 0px 3px 8px; */
 }
 
 .sender-message::before {
@@ -202,7 +205,7 @@
   background-color: #fff;
   border-radius: 5px;
   /* border: 1px solid #dbdbdb; */
-  box-shadow: #0000003d 0px 3px 8px;
+  /* box-shadow: #0000003d 0px 3px 8px; */
   font-family: Helvetica;
 }
 
@@ -299,15 +302,15 @@
   width: 15%;
   border-radius: 10px;
   border: none;
-  padding: 10px;
+  padding: 8px;
   font-size: 20px;
 }
 
 
 .send{
   border-radius: 50%;
-  color: white;
-  background-color: rgb(2 29 117);
+  /* color: rgb(117, 49, 49); */
+  background-color: rgb(255, 255, 255);
   height: 80%;
   width: 13%;
   border: 2px solid #fff;
@@ -328,26 +331,27 @@
   content: "";
   position: absolute;
   top: 4px;
-  right: -5px;
+  right: -4px;
   width: 0;
   height: 0;
   border-top: 0px solid transparent;
   border-bottom: 9px solid transparent;
-  border-left: 10px solid #fff;
+  border-left: 10px solid #e3f2f4;
   transform: translateY(-45%);
 }
 
 .user-message{
-  border-radius: 5px;
+  border-radius: 30px;
   max-width: 78%;
   padding: 10px;
-  background-color: #fff;
-  font-family: Helvetica;
+  background-color: #e3f2f4;
+  font-family: tahoma;
   color: black;
   position: relative;
-  margin-top: 20px;
+  /* margin-top: 20px; */
+  font-size: 14px;
   border-top-right-radius: 0;
-  box-shadow: #0000003d 0px 3px 8px;
+  /* box-shadow: #0000003d 0px 3px 8px; */
 }
 
 .user-name{
@@ -361,17 +365,17 @@
   letter-spacing: 0.03em;
 }
 .user-logo{
-  height: 35px;
+  height: 30px;
   position: relative;
-  width: 35px;
+  width: 30px;
   border-radius: 50%;
-  background-color:  #0476f0;
+  background-color:  #2d537b;
   border: 2px solid #fff;
   color: #fff;
-  margin-top: 5px;
+  margin-top: -10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 14px;
 }
 

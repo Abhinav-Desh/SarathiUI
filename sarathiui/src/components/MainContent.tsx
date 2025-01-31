@@ -34,7 +34,7 @@ const MainContent = () => {
             <div className="sender-logo">SA</div>
           
             <div className='sender-message'>
-            <div className="ai-name">SARATHI AI</div>
+            {/* <div className="ai-name">SARATHI AI</div> */}
                 <div className='sender-text' style={{lineHeight:'25px'}}> Hi, I am SarathiAi - Pramerica Life Insurance Chatbot. I'm here to help you with any question you have today?  Click on the menu button below to get started with your Insurance needs.
                 </div>
                 <div className="sender-timing"></div>
@@ -67,7 +67,7 @@ const MainContent = () => {
         <div className="user-content">
 
           <div className='user-message'>
-          <div className="user-name">YOU</div>
+          {/* <div className="user-name">YOU</div> */}
               <div className='user-text' style={{lineHeight:'25px'}}>Update my mobile number
               </div>
               </div>

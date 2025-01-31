@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="something-type">
             <div className="attach-file"><AttachFileIcon style={{color:"rgb(146 146 146);"}}/></div>
             <input type="text" placeholder="Type something here..." className="text-something"/></div>
-        <button className="send"><SendIcon style={{color:'white'}}/></button>
+        <button className="send"><SendIcon style={{color:'#585858'}}/></button>
       </form>
       <div className="footer-text"> <sup>*</sup>These are AI generated responses and may contain inaccuracies. Responses may take a few seconds.</div>
       </div>
