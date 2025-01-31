@@ -2,6 +2,7 @@ import Header from './components/Header.tsx';
 import MainContent from './components/MainContent.tsx';
 import Footer from './components/Footer.tsx'
 import './App.css';
+import 'animate.css';
 
 function App() {
   return (
