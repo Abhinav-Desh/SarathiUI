@@ -5,14 +5,14 @@ import AttachFileIcon from '@mui/icons-material/AttachFile';
 const Footer = () => {  
   const handleForm = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic here
+   
     console.log('Form submitted');
   };
 
   return (
     <div className="footer-container">
       <div className="footer-content">
-        {/* Changed from onClick to onSubmit for form submission */}
+       
         <form onSubmit={handleForm} className="footer-form">
           <div className="something-type">
             <div className="attach-file">
