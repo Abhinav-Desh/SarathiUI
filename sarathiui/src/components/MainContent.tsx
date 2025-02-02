@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import DoneAllIcon from '@mui/icons-material/DoneAll';
 const suggestion = [
   { name: 'Update Mobile Number' },
   { name: 'Update Email' },
@@ -39,7 +39,7 @@ const MainContent = () => {
           {/* <div className="sender-logo">SA</div> */}
 
           <div className="sender-message">
-            {/* <div className="ai-name">SARATHI AI</div> */}
+            <div className='tick-icon'><DoneAllIcon style={{fontSize:'18px'}}/></div>
             <div className="sender-text" style={{ lineHeight: '25px' }}>
               Hi, I am SarathiAi - Pramerica Life Insurance Chatbot. I'm here to help you with any question you have today? Click on the menu button below to get started with your Insurance needs.
             </div>
