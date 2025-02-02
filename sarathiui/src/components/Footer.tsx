@@ -26,7 +26,7 @@ const Footer = () => {
           </div>
           {/* Added type="submit" to button */}
           <button type="submit" className="send">
-            <SendIcon style={{ color: '#585858' }} />
+            <SendIcon style={{ color: 'white',fontSize:'18px' }} />
           </button>
         </form>
         <div className="footer-text">
