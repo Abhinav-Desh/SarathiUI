@@ -36,7 +36,7 @@ const MainContent = () => {
         </div>
 
         <div className="sender-content">
-          {/* <div className="sender-logo">SA</div> */}
+          <div className="sender-logo">SA</div>
 
           <div className="sender-message">
             <div className='tick-icon'><DoneAllIcon style={{fontSize:'18px'}}/></div>
