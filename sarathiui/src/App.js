@@ -8,6 +8,9 @@ import IntroScreen from './components/IntroScreen.tsx'
 
 function App() {
   const [showIntro,setShowIntro] = useState(true);
+  const [userMessage,setUserMessage] = useState('');
+  const [messages, setMessages] = useState([]);
+  const [toggleSuggestion,setToggleSuggestion] = useState(true);
   useEffect(()=>{
     const timer = setTimeout(()=>setShowIntro(false),2000);
     return ()=>clearTimeout(timer);
@@ -18,8 +21,8 @@ function App() {
    (
     <>
       <Header />
-      <MainContent />
-      <Footer />
+      <MainContent messages={messages} setMessages= {setMessages} userMessage={userMessage} setUserMessage={setUserMessage} toggleSuggestion={toggleSuggestion} setToggleSuggestion={setToggleSuggestion} />
+      <Footer messages={messages} setMessages={setMessages} userMessage = {userMessage} setUserMessage ={setUserMessage} toggleSuggestion={toggleSuggestion} setToggleSuggestion={setToggleSuggestion}/>
     </>
   )}
     </div>
