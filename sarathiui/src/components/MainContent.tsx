@@ -84,7 +84,7 @@ const MainContent: React.FC<MainContentProps> = ({ messages, setMessages, userMe
         {/* user-content */}
         {messages.map((element,index)=>(
           element.sender === 'bot' ?
-          <div className="sender-content">
+          <div key={index} className="sender-content">
           <div className="sender-logo">SA</div>
 
           <div className="sender-message">

@@ -18,12 +18,13 @@ const Footer: React.FC<FooterProps> = ({ messages, setMessages, userMessage, set
   const fileInput = useRef<HTMLInputElement>(null);
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const files = e.target.files
+    const files = e.target?.files;
     if (files && files.length > 0) {
-      setFile(files[0]);
-      // console.log(file.name)
-      console.log(file)
-
+      const selectedFile = files[0];
+      setFile(selectedFile); 
+      console.log(selectedFile); 
+    } else {
+      console.error('No file selected!');
     }
   };
 
@@ -40,7 +41,16 @@ const Footer: React.FC<FooterProps> = ({ messages, setMessages, userMessage, set
     }
     console.log('Form submitted');
     console.log(userMessage);
-    console.log(file.name)
+    
+    // console.log(file.name)
+   
+    setFile(null);
+    if(file!==null){
+      console.log(file.name);
+    }
+    else{
+      console.error("file is null right now ")
+    }
   };
 
   const typing = (e: React.ChangeEvent<HTMLInputElement>) => {
