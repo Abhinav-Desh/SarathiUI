@@ -1,4 +1,5 @@
 import React, { useState, useEffect, ReactEventHandler } from 'react';
+import { useRef } from 'react';
 // import DoneAllIcon from '@mui/icons-material/DoneAll';
 const suggestion = [
   { name: 'Update Mobile Number' },
@@ -18,6 +19,7 @@ interface MainContentProps {
 const MainContent: React.FC<MainContentProps> = ({ messages, setMessages, userMessage, setUserMessage,toggleSuggestion,setToggleSuggestion}) => {
   // Initialize the state for storing the formatted time
   const [initialTime, setInitialTime] = useState<string>('');
+  const messagesEndRef = useRef<HTMLDivElement | null>(null);
   
   // Function to format time as '12-hour' with AM/PM
   function getFormattedTime(date: Date): string {
@@ -29,6 +31,13 @@ const MainContent: React.FC<MainContentProps> = ({ messages, setMessages, userMe
 
     return date.toLocaleTimeString([], options);
   }
+
+  
+  useEffect(() => {
+    if (messages && messagesEndRef?.current && messages?.length > 1) {
+      messagesEndRef?.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [messages]);
 
   useEffect(() => {
     const presentTime = new Date();
@@ -98,7 +107,7 @@ const MainContent: React.FC<MainContentProps> = ({ messages, setMessages, userMe
         </div>
         )
         ))}
-        
+         <div ref={messagesEndRef} />
       </div>
     </div>
   );

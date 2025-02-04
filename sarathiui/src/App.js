@@ -11,10 +11,21 @@ function App() {
   const [userMessage,setUserMessage] = useState('');
   const [messages, setMessages] = useState([]);
   const [toggleSuggestion,setToggleSuggestion] = useState(true);
+  // const messagesEndRef = useRef<HTMLDivElement | null>(null);
+
   useEffect(()=>{
     const timer = setTimeout(()=>setShowIntro(false),2000);
     return ()=>clearTimeout(timer);
   },[]);
+
+
+  // useEffect(() => {
+  //   if (messages && messagesEndRef?.current && messages?.length > 1) {
+  //     messagesEndRef?.current.scrollIntoView({ behavior: "smooth" });
+  //   }
+  // }, [messages]);
+
+
   return (
     <div className="App">
       {showIntro? <IntroScreen />:
